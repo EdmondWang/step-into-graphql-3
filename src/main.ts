@@ -1,11 +1,11 @@
 import { ApolloServer } from 'apollo-server';
 
-import bookResolver from './resolvers/bookResolver';
-import bookSchema from './schemas/bookSchema';
+import resolvers from './resolvers';
+import schemas from './schemas';
 
 const server = new ApolloServer({
-    resolvers: bookResolver,
-    typeDefs: bookSchema
+    resolvers,
+    typeDefs: schemas
 });
 
 server.listen().then(({url}) => {
