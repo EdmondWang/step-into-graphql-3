@@ -5,10 +5,9 @@
   "main": "dist/index.js",
   "scripts": {
     "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
-    "build": "tsc",
-    "prestart": "npm run build",
-    "start": "node .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --config webpack.$NODE_ENV.js",
+    "start": "node dist/main",
+    "production": "NODE_ENV=production npm run build"
   },
   "repository": {
     "type": "git",
@@ -22,8 +21,10 @@
   },
   "homepage": "https://github.com/EdmondWang/step-into-graphql-3#readme",
   "dependencies": {
+    "@types/graphql": "^14.0.7",
     "apollo-server": "^2.4.8",
-    "graphql": "^14.1.1"
+    "graphql": "^14.1.1",
+    "winston": "^3.2.1"
   },
   "devDependencies": {
     "@types/webpack-env": "^1.13.9",
