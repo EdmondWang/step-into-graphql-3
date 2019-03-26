@@ -19,7 +19,9 @@ module.exports = merge.smart(common, {
     ],
     mode: 'development',
     plugins: [
-        new CleanWebpackPlugin(['dist']),
+        new CleanWebpackPlugin({
+            verbose: true
+        }),
         new webpack.HotModuleReplacementPlugin()
     ],
     watch: true

@@ -6,8 +6,9 @@
   "scripts": {
     "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
     "build": "webpack --config webpack.$NODE_ENV.js",
-    "start": "node dist/main",
-    "production": "NODE_ENV=production npm run build"
+    "pro": "NODE_ENV=production npm run build",
+    "dev": "NODE_ENV=development npm run build",
+    "start": "node dist/main"
   },
   "repository": {
     "type": "git",
@@ -21,12 +22,13 @@
   },
   "homepage": "https://github.com/EdmondWang/step-into-graphql-3#readme",
   "dependencies": {
-    "@types/graphql": "^14.0.7",
     "apollo-server": "^2.4.8",
     "graphql": "^14.1.1",
-    "winston": "^3.2.1"
+    "lodash": "^4.17.11"
   },
   "devDependencies": {
+    "@types/graphql": "^14.0.7",
+    "@types/lodash": "^4.14.123",
     "@types/webpack-env": "^1.13.9",
     "clean-webpack-plugin": "^2.0.1",
     "ts-loader": "^5.3.3",

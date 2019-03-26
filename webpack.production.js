@@ -10,5 +10,5 @@ module.exports = merge(common, {
     entry: [path.join(__dirname, 'src/main.ts')],
     externals: [nodeExternals({})],
     mode: 'production',
-    plugins: [new CleanWebpackPlugin(['dist'])],
+    plugins: [new CleanWebpackPlugin({})],
 });
