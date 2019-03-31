@@ -1,4 +1,4 @@
-interface IBook {
+interface IMovie {
     id: number;
     name: string;
 }

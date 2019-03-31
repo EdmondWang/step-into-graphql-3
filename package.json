@@ -23,6 +23,7 @@
   "homepage": "https://github.com/EdmondWang/step-into-graphql-3#readme",
   "dependencies": {
     "apollo-server": "^2.4.8",
+    "concurrently": "^4.1.0",
     "graphql": "^14.1.1",
     "lodash": "^4.17.11"
   },
