@@ -2,13 +2,13 @@
   "name": "step-into-graphql-3",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/index.js",
+  "main": "dist/server/src/main.js",
   "scripts": {
     "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
     "build": "webpack --config webpack.$NODE_ENV.js",
     "pro": "NODE_ENV=production npm run build",
     "dev": "NODE_ENV=development npm run build",
-    "start": "node dist/main"
+    "start": "node dist/server/src/main.js"
   },
   "repository": {
     "type": "git",
