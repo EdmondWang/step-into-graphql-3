@@ -1,5 +1,5 @@
 import {merge} from 'lodash';
 
-import BookSchema from './bookSchema';
+import MovieSchema from './movieSchema';
 
-export default merge(BookSchema);
+export default merge(MovieSchema);

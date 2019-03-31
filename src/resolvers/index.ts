@@ -1,5 +1,5 @@
 import {merge} from 'lodash';
 
-import BookResolver from './bookResolver';
+import MovieResolver from './movieResolver';
 
-export default merge(BookResolver);
+export default merge(MovieResolver);

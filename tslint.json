@@ -5,8 +5,8 @@
     ],
     "jsRules": {},
     "rules": {
-        "no-console": false,
         "trailing-comma": [ false ],
+        "no-console": false,
         "quotemark": [true, "single", "jsx-double"]
     },
     "rulesDirectory": []
