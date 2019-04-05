@@ -9,7 +9,7 @@ module.exports = {
         }, ],
     },
     output: {
-        filename: 'server/src/main.ts',
+        filename: 'server/src/main.js',
         path: path.resolve(__dirname, 'dist'),
     },
     resolve: {
