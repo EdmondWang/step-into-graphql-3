@@ -10,7 +10,7 @@
         "baseUrl": ".",
     },
     "include": [
-        "server/src/**/*"
+        "src/**/*"
     ],
     "exclude": [
         "node_modules",
