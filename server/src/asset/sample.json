@@ -24,4 +24,30 @@
     "height": 1487,
     "tireSize": "265/40 R20",
     "trunkSize": 505
+},{
+    "make": "BMW",
+    "model": "3 Series",
+    "classification": "B-Segment",
+    "year": "2019",
+    "transmission": "automatic",
+    "fuelType": "gasoline",
+    "color": "blue",
+    "length": 4650,
+    "width": 1811,
+    "height": 1450,
+    "tireSize": "255/40 R18",
+    "trunkSize": 480
+},{
+    "make": "Toyota",
+    "model": "Camery",
+    "classification": "B-Segment",
+    "year": "2019",
+    "transmission": "automatic",
+    "fuelType": "gasoline",
+    "color": "white",
+    "length": 4885,
+    "width": 1840,
+    "height": 1455,
+    "tireSize": "205/65 R16",
+    "trunkSize": 593
 }]
