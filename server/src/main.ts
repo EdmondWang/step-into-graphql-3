@@ -1,9 +1,9 @@
 import { ApolloServer } from 'apollo-server-express';
 import bodyParser from 'body-parser';
 import express from 'express';
+import resolvers from './graphql/resolvers';
+import schemas from './graphql/schemas';
 import mongo from './mongo';
-import resolvers from './resolvers';
-import schemas from './schemas';
 
 const PORT = 3000;
 const app = express();

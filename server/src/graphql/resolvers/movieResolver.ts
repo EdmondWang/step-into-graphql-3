@@ -1,6 +1,6 @@
 export default {
     Query: {
-        testMessage: (): string => {
+        movies: (): string => {
             return 'Hello World';
         }
     }

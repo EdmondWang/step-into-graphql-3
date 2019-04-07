@@ -7,6 +7,7 @@ const PWD = '12345678';
 const URL = `mongodb://${USER_NAME}:${PWD}localhost:27017/${DATABASE_NAME}`;
 
 const setupConnection = async () => {
+    console.log('Setting up connection to mongo');
     const client = new MongoClient(URL, {useNewUrlParser: true});
     let db = null;
     try {
