@@ -1,5 +1,5 @@
 import {merge} from 'lodash';
 
-import MovieSchema from './movieSchema';
+import AutoSchema from './AutoSchema';
 
-export default merge(MovieSchema);
+export default merge(AutoSchema);

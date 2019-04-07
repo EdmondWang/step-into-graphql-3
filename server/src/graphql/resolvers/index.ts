@@ -1,5 +1,5 @@
 import {merge} from 'lodash';
 
-import MovieResolver from './movieResolver';
+import AutoResolver from './AutoResolver';
 
-export default merge(MovieResolver);
+export default merge(AutoResolver);
