@@ -13,7 +13,7 @@ init();
 
 export default {
     Query: {
-        movies: async (): Promise<Auto[]> => {
+        autos: async (): Promise<Auto[]> => {
             return autoRepo.find();
         }
     }
