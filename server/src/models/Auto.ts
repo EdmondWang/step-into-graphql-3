@@ -1,8 +1,7 @@
 export class Auto {
-
     private _make: string;
     private _model: string;
-    private _bodyType: string;
+    private _classification: string;
     private _year: string;
     private _transmission: string;
     private _fuelType: string;
@@ -10,6 +9,7 @@ export class Auto {
     private _length: number;
     private _width: number;
     private _height: number;
+    private _trunkSize: number;
 
     /**
      * Getter make
@@ -28,11 +28,11 @@ export class Auto {
     }
 
     /**
-     * Getter bodyType
+     * Getter classification
      * @return {string}
      */
-    public get bodyType(): string {
-        return this._bodyType;
+    public get classification(): string {
+        return this._classification;
     }
 
     /**
@@ -92,6 +92,14 @@ export class Auto {
     }
 
     /**
+     * Getter trunkSize
+     * @return {number}
+     */
+    public get trunkSize(): number {
+        return this._trunkSize;
+    }
+
+    /**
      * Setter make
      * @param {string} value
      */
@@ -108,11 +116,11 @@ export class Auto {
     }
 
     /**
-     * Setter bodyType
+     * Setter classification
      * @param {string} value
      */
-    public set bodyType(value: string) {
-        this._bodyType = value;
+    public set classification(value: string) {
+        this._classification = value;
     }
 
     /**
@@ -169,5 +177,13 @@ export class Auto {
      */
     public set height(value: number) {
         this._height = value;
+    }
+
+    /**
+     * Setter trunkSize
+     * @param {number} value
+     */
+    public set trunkSize(value: number) {
+        this._trunkSize = value;
     }
 }

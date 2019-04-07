@@ -1,0 +1,27 @@
+[{
+    "make": "Audi",
+    "model": "A4L",
+    "classification": "B-Segment",
+    "year": "2019",
+    "transmission": "automatic",
+    "fuelType": "gasoline",
+    "color": "white",
+    "length": 4727,
+    "width": 1842,
+    "height": 1427,
+    "tireSize": "205/60 R16",
+    "trunkSize": 424
+}, {
+    "make": "Audi",
+    "model": "A8",
+    "classification": "E-Segment",
+    "year": "2018",
+    "transmission": "automatic",
+    "fuelType": "gasoline",
+    "color": "black",
+    "length": 5302,
+    "width": 1945,
+    "height": 1487,
+    "tireSize": "265/40 R20",
+    "trunkSize": 505
+}]
