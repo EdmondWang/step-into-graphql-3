@@ -4,8 +4,8 @@ import {gql} from 'apollo-server-express';
 
 export default gql`
     type Movie {
-        name: string
-        year: string
+        name: String
+        year: String
     }
     type Query {
         movies: [Movie]

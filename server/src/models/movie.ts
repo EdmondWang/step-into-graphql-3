@@ -1,7 +1,10 @@
-interface IMovie {
-    id: number;
-    name: string;
-    year: string;
-}
+export class Movie {
+    private name: string;
+    private year: string;
 
-export default IMovie;
+    constructor(name: string, year: string) {
+        this.name = name;
+        this.year = year;
+    }
+
+}

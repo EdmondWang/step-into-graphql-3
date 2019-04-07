@@ -3,7 +3,7 @@ import bodyParser from 'body-parser';
 import express from 'express';
 import resolvers from './graphql/resolvers';
 import schemas from './graphql/schemas';
-import mongo from './mongo';
+import MongoConn from './mongo/Connection';
 
 const PORT = 3000;
 const app = express();
@@ -15,7 +15,7 @@ const server = new ApolloServer({
 
 server.applyMiddleware({ app, path: '/graphql' });
 
-mongo.then((db) => {
+MongoConn.getConn().then(() => {
     console.log('mongodb connected');
     app.listen(process.env.PORT || PORT, () => {
         console.log(`Express Server ready at http://localhost:${PORT}`);
