@@ -5,6 +5,7 @@
     ],
     "jsRules": {},
     "rules": {
+        "object-literal-sort-keys": [false],
         "variable-name": [false],
         "adjacent-overload-signatures": [false],
         "trailing-comma": [ false ],

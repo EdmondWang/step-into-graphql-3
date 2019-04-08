@@ -1,4 +1,4 @@
-import { Auto } from 'src/models/Auto';
+import { Auto } from '../../models/Auto';
 import AutoRepo from '../../mongo/AutoRepo';
 import MongoConn from '../../mongo/Connection';
 
@@ -15,6 +15,23 @@ export default {
     Query: {
         autos: async (): Promise<Auto[]> => {
             return autoRepo.find();
+        }
+    },
+    Mutation: {
+        addAuto: async (make: string, model: string, year: string): Promise<Auto> => {
+
+            const auto = new Auto();
+            auto.make = make;
+            auto.model = model;
+            auto.year = year;
+
+            try {
+                const result = await autoRepo.create(auto);
+                return result && auto;
+            } catch (e) {
+                throw e;
+            }
+
         }
     }
 };

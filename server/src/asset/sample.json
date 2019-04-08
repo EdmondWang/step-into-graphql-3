@@ -24,7 +24,7 @@
     "height": 1487,
     "tireSize": "265/40 R20",
     "trunkSize": 505
-},{
+}, {
     "make": "BMW",
     "model": "3 Series",
     "classification": "B-Segment",
@@ -37,7 +37,7 @@
     "height": 1450,
     "tireSize": "255/40 R18",
     "trunkSize": 480
-},{
+}, {
     "make": "Toyota",
     "model": "Camery",
     "classification": "B-Segment",

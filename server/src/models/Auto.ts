@@ -1,15 +1,16 @@
 export class Auto {
-    private _make: string;
-    private _model: string;
-    private _classification: string;
-    private _year: string;
-    private _transmission: string;
-    private _fuelType: string;
-    private _color: string;
-    private _length: number;
-    private _width: number;
-    private _height: number;
-    private _trunkSize: number;
+
+    private _make?: string;
+    private _model?: string;
+    private _classification?: string;
+    private _year?: string;
+    private _transmission?: string;
+    private _fuelType?: string;
+    private _color?: string;
+    private _length?: number;
+    private _width?: number;
+    private _height?: number;
+    private _trunkSize?: number;
 
     /**
      * Getter make
