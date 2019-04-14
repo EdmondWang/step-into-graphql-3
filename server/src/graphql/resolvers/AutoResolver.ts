@@ -18,12 +18,12 @@ export default {
         }
     },
     Mutation: {
-        addAuto: async (make: string, model: string, year: string): Promise<Auto> => {
+        addAuto: async (make: string): Promise<Auto> => {
 
             const auto = new Auto();
             auto.make = make;
-            auto.model = model;
-            auto.year = year;
+            // auto.model = model;
+            // auto.year = year;
 
             try {
                 const result = await autoRepo.create(auto);

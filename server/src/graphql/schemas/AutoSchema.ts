@@ -12,6 +12,6 @@ export default gql`
         autos: [Auto]
     }
     type Mutation {
-        addAuto(make: String!, model: String!, year: String!): Auto!
+        addAuto(make: String!): Auto!
     }
 `;
