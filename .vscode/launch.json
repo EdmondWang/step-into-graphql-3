@@ -6,6 +6,19 @@
     "configurations": [
         {
             "type": "node",
+            "request": "launch",
+            "name": "Debug",
+            "cwd": "${workspaceFolder}/server/",
+            "program": "${workspaceFolder}/server/src/main.ts",
+            "sourceMaps": true,
+            // "console": "integratedTerminal",
+            // "internalConsoleOptions": "openOnSessionStart",
+            "outFiles": [
+                "${workspaceFolder}/server/dist/src/*.js"
+            ]
+        },
+        {
+            "type": "node",
             "request": "attach",
             "name": "Attach",
             "processId": "${command:PickProcess}"

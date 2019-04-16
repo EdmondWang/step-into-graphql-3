@@ -7,7 +7,7 @@ const webpack = require('webpack');
 const common = require('./webpack.common.js');
 
 module.exports = merge.smart(common, {
-    devtool: 'inline-source-map',
+    devtool: 'source-map',
     entry: [
         'webpack/hot/poll?1000',
         path.join(__dirname, 'src/main.ts')

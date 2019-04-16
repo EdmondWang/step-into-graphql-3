@@ -21,6 +21,7 @@ export default {
         addAuto: async (make: string): Promise<Auto> => {
 
             const auto = new Auto();
+
             auto.make = make;
             // auto.model = model;
             // auto.year = year;
