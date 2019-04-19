@@ -7,6 +7,9 @@ export default gql`
         make: String
         model: String
         year: String
+        width: Number
+        height: Number
+        length: Number
     }
     type Query {
         autos: [Auto]
